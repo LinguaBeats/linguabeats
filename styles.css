@@ -38,7 +38,8 @@ header {
 
 .logo {
   height: 50px;
-  /* Adjust logo size as needed */
+  /* Adjust logo size as needed */ 
+  /* Additional styling (margins, padding, etc.) can be added here */
 }
 
 header nav ul {
