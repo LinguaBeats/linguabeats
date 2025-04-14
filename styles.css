@@ -20,7 +20,7 @@ body {
 
 /* Header */
 header {
-  background: #000; /* Rich black background */
+  background: #000;
   padding: 20px 0;
   border-bottom: 1px solid #333;
 }
@@ -31,15 +31,8 @@ header {
   align-items: center;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  height: 50px;
-  /* Adjust logo size as needed */ 
-  /* Additional styling (margins, padding, etc.) can be added here */
+.logo-container img.logo {
+  height: 60px;
 }
 
 header nav ul {
@@ -54,22 +47,29 @@ header nav ul li {
 header nav ul li a {
   color: #ddd;
   text-decoration: none;
+  font-weight: 700;
   transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-  color: #bb86fc; /* Soft purple accent */
+  color: #bb86fc;
 }
 
 /* Hero Section */
 #hero {
-  background: linear-gradient(135deg, #4a148c, #6a1b9a); /* Subdued purple gradient */
+  background: linear-gradient(135deg, #4a148c, #6a1b9a);
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
   text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .hero-content h2 {
@@ -99,27 +99,39 @@ header nav ul li a:hover {
   transform: scale(1.05);
 }
 
-/* Sections */
-section {
+/* About Section */
+#about {
   padding: 60px 0;
   text-align: center;
 }
 
-section h2 {
+#about h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #bb86fc; /* Soft purple for headings */
+  color: #bb86fc;
 }
 
-/* About Section */
 #about p {
   font-size: 1.1rem;
   line-height: 1.8;
+  margin-bottom: 20px;
   color: #ccc;
 }
 
 /* Packs Section */
+#packs {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#packs h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #bb86fc;
+}
+
 .packs-container {
   display: flex;
   flex-wrap: wrap;
@@ -150,11 +162,72 @@ section h2 {
   color: #bbb;
 }
 
-/* Contact Section */
-#contact a {
+/* Waitlist Section */
+#waitlist {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#waitlist h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
   color: #bb86fc;
-  text-decoration: none;
-  font-weight: bold;
+}
+
+#waitlist p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+#waitlist form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#waitlist input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 300px;
+  max-width: 80%;
+}
+
+#waitlist button {
+  background: #bb86fc;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#waitlist button:hover {
+  background: #9c67e4;
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #bb86fc;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  color: #ccc;
 }
 
 /* Footer */
@@ -162,13 +235,15 @@ footer {
   background: #000;
   color: #bbb;
   padding: 15px 0;
+  text-align: center;
   font-size: 0.9rem;
 }
 
-/* Responsive */
+/* Responsive Styles */
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
+    text-align: center;
   }
   
   header nav ul {
