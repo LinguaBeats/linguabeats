@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lingua Beats</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400i" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header with logo -->
+  <!-- Header with logo and navigation -->
   <header>
     <div class="header-container container">
       <div class="logo-container">
@@ -18,6 +18,7 @@
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#packs">Packs</a></li>
+          <li><a href="#waitlist">Waitlist</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -27,17 +28,23 @@
   <!-- Hero Section -->
   <section id="hero">
     <div class="hero-content container">
+      <h1>Lingua Beats</h1>
       <h2>Learn Languages Through Music &amp; AI</h2>
       <p>Immerse yourself in an experience where every beat helps you master a new language.</p>
-      <button onclick="window.location.href='mailto:signup@linguabeats.com'">Join Our Waitlist</button>
+      <button onclick="window.location.href='#waitlist'">Join Our Waitlist</button>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About Section (Extended) -->
   <section id="about">
     <div class="container">
       <h2>About Lingua Beats</h2>
-      <p>Lingua Beats revolutionizes language learning by combining engaging music, innovative AI, and interactive packs. Our platform offers an experience that is effective, enjoyable, and truly captivating.</p>
+      <p>
+        Lingua Beats is a revolutionary educational platform that combines the power of music with innovative AI to create an immersive language learning experience. Our approach engages multiple senses, making language acquisition not just efficient, but enjoyable and memorable. We offer interactive music packs, real-time AI assistance, and a continuously evolving curriculum that adapts to your learning needs.
+      </p>
+      <p>
+        By integrating cognitive science, music theory, and state-of-the-art technology, we provide a unique method that helps you retain new vocabulary, grasp grammar in context, and enjoy the process. Whether you're just starting out or looking to refine your fluency, Lingua Beats is designed to support your language journey every step of the way.
+      </p>
     </div>
   </section>
 
@@ -48,11 +55,11 @@
       <div class="packs-container">
         <div class="pack">
           <h3>Starter Pack - 7.99€</h3>
-          <p>Begin your language journey with the essentials designed to kickstart your learning experience.</p>
+          <p>Begin your language journey with essential content to kickstart your progress.</p>
         </div>
         <div class="pack">
           <h3>Advanced Pack - 6.99€</h3>
-          <p>For more experienced learners—unlock exclusive content and advanced features for deeper learning.</p>
+          <p>Unlock deeper learning with exclusive material and advanced features.</p>
         </div>
         <div class="pack">
           <h3>New Popstars (In-App Exclusive) - 2€</h3>
@@ -62,11 +69,27 @@
     </div>
   </section>
 
+  <!-- Waitlist Section with Form -->
+  <section id="waitlist">
+    <div class="container">
+      <h2>Join the Waitlist</h2>
+      <p>
+        Be the first to access new features and exclusive content! Sign up below to stay updated.
+      </p>
+      <form action="https://example.com/your-waitlist-endpoint" method="post">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact">
     <div class="container">
       <h2>Contact</h2>
-      <p>Have questions or suggestions? Email us at <a href="mailto:info@linguabeats.com">info@linguabeats.com</a>.</p>
+      <p>
+        Have questions or suggestions? Email us at <a href="mailto:beatslingua@gmail.com">beatslingua@gmail.com</a>.
+      </p>
     </div>
   </section>
 
@@ -78,3 +101,4 @@
   </footer>
 </body>
 </html>
+
