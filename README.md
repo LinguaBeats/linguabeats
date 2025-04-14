@@ -22,8 +22,7 @@ Our platform is already tested and proven to work, ensuring a robust learning to
 - **Interactive Music Packs:**  
   - *Starter Pack (7.99€):* Perfect for beginners, offering essential language modules paired with captivating beats.
   - *Advanced Pack (6.99€):* For more experienced learners, featuring advanced language lessons integrated with immersive music.
-  - *In-App Exclusives (2€ add-ons):* Regular updates and “new popstars” features that keep your learning experience fresh.
-
+  
 - **AI-Powered Chatbot:**  
   - A built-in chatbot on our website that provides instant answers to your language queries, offers personalized lyric suggestions, and assists you in navigating our content.
 
